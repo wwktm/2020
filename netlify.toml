@@ -1,0 +1,15 @@
+[build]
+  functions = "functions"
+
+[build.environment]
+  HUGO_VERSION = "0.56.3"
+
+[context.deploy-preview]
+  command = "hugo --config config.dev.toml --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+command = "hugo --config config.dev.toml --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.56.3"
+  command = "hugo --buildFuture -b $DEPLOY_PRIME_URL"
