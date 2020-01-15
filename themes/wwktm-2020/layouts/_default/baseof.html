@@ -1,0 +1,28 @@
+{{ partial "common/head.html" . }}
+
+<div class="wrapper base" role="main">
+    {{ block "header" . }}
+        {{ partial "navigation/navigation.html" .}}
+    {{ end }}
+  
+    <!-- Code that all your templates share, like a header -->
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+    
+  
+</div>
+
+{{ block "footer" . }}
+{{ partial "common/foot.html" . }}
+<!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+{{ end }}
+
+{{ block "scripts" . }}
+
+
+{{ end }}
+
+</body>
+
+</html>
