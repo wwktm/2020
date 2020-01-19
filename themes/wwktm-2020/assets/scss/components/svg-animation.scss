@@ -1,7 +1,7 @@
-#w-middle {
+.w-middle {
     animation: opacity-easeInOutBounce 1000ms linear 0s 1 both running;
   }
-  /*#w-sides{*/
+  /*.w-sides{*/
   /*animation: opacity-easeInOutBounce 1000ms linear 5s 1 reverse both running;*/
   /*}*/
   @keyframes opacity-easeInOutBounce {
@@ -14,46 +14,63 @@
   }
   
   /* w animation */
-  #w-side-masks,
-  #w-middle-mask {
+  
+  .w-middle-mask {
     fill: none;
     stroke: rgba(0,0,0,0.04);
     stroke-width: 5px;
     stroke-dasharray: 3000;
     stroke-dashoffset: 0;
   }
-  #w-side-masks {
+  .w-side-masks {
     animation: side-masks 3s ease-in forwards;
   }
-  #w-middle-mask {
+  .w-middle-mask {
     animation: middle-mask 3s ease-in forwards;
   }
-  #w-sides,
-  #w-middle {
+
+  .cls-4 {
+    fill: #8d82d4;
+  }
+
+  .cls-4 {
+    animation: middle-mask 3s ease-in forwards;
+  }
+
+  .cls-5 {
+    animation: side-mask 3s ease-in forwards;
+  }
+
+  .cls-6 {
+    animation: side-mask 3s ease-in forwards;
+  }
+
+  .w-sides,
+  .w-middle {
     opacity: 0;
     animation: image 3s ease-in forwards;
   }
-  #Shape1 {
+  .Shape1 {
     stroke-dasharray: 3000;
     stroke-dashoffset: -1000;
     animation: dashbackward 3s ease-out forwards;
   }
-  #Shape2 {
+  .Shape2 {
     stroke-dasharray: 3000;
     stroke-dashoffset: 1000;
     animation: dashforward 3s ease-out forwards;
   }
-  #Shape3 {
+  .Shape3 {
     stroke-dasharray: 3000;
     stroke-dashoffset: -2000;
     animation: dashbackward 3s ease-out forwards;
   }
-  #Shape4 {
+  .Shape4 {
     stroke-dasharray: 3000;
     stroke-dashoffset: 2000;
     animation: dashforward 3s ease-out forwards;
   }
-  #Shape5 {
+  .Shape5 {
     stroke-dasharray: 3000;
     stroke-dashoffset: -3000;
     animation: dashbackward 3s ease-out forwards;
@@ -88,22 +105,23 @@
     100% {
       stroke-width: 0;
           stroke-dashoffset: 0;
-      fill: #45BEF4;
+      // fill: #45BEF4;
       }
   }
   
   @keyframes middle-mask {
       0% {
           stroke-dashoffset: 3000;
+          fill: #fff;
       }
       50% {
-      fill: #fff;
+      fill: #c9c9c9;
       stroke-width: 5;
       }
     100% {
       stroke-width: 0;
           stroke-dashoffset: 0;
-      fill: #FF7D4A;
+      // fill: #FF7D4A;
       }
   }
   
