@@ -1,20 +1,33 @@
 {{ define "main"}}
-<section class="hero">
-  <div class="hero-body">
-    <div class="container">
-      <div class="hero-content">
-        <span class="small-title">19-20 September 2019</span>
-        <h1 class="title">Bringing<br /> Together The <br />Web Community</h1>
-        <!--<a class="button is-info is-large" title="Buy Tickets Soon" href="#ticket" >Tickets: Buy Now</a>-->
-      </div>
-      <div class="what">
-        <p><strong>A 2-day International Conference</strong> on <strong> Web technologies </strong> and everything around the Web. </p>
-        <p>No matter if you consider yourself a designer, dev-ops, backend dev, frontend dev or anywhere in between. <strong>#wwktm is for you.</strong></p>
-      </div>
-      {{partial "animation/logo.html" . }}
-    </div>
 
+<style>
+  .art-holder {
+    position: relative;
+  }
+  .release-date{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .release-date {
+      position: relative;
+    }
+  
+  }
+</style>
+
+<section>
+  <div class="art-holder">
+    {{ partial "wwktm-art/index.html" . }}
+    <div class="release-date">
+      {{ partial "release-date/date.html" . }}
+    </div>
   </div>
 </section>
 
+<!-- credits -->
+{{ partial "wwktm-art/credit.html" . }}
 {{end}}
