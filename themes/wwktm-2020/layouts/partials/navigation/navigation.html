@@ -2,33 +2,38 @@
   .navbar {
     z-index: 100;
   }
+
   .navbar-navs {
     /* float: right !important; */
   }
- .navbar-navs  .nav-items {
-  display: inline-block;
-  float: left !important;
-  font-size: 1.2rem;
-  padding: 5px;
-}
+
+  .navbar-navs .nav-items {
+    display: inline-block;
+    float: left !important;
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+  .nav-logo {
+    width: 150px;
+  }
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-light">
   <ul class="navbar-navs mr-auto my-lg-0">
     <li class="nav-items ">
-      <a href="/" class="nav-link"><img src="/img/logo.png" alt="" width="150px"></a>
+      <a href="/" class="nav-link"><img src="/img/logo.png" class="nav-logo" alt=""></a>
     </li>
   </ul>
-      <ul class="navbar-navs my-2 my-lg-0">
-        <li class="nav-items ">
-            <a class="nav-link" href="https://2019.wwktm.co">2019 </a>
-          </li>
-          <li class="nav-items">
-            <a class="nav-link" href="https://2018.wwktm.co">2018</a>
-          </li>
-          <li class="nav-items active">
-            <a class="nav-link" href="https://blog.wwktm.co">Blog <span class="sr-only">(current)</span></a>
-          </li>
-          
-      </ul>
-  </nav>
+  <ul class="navbar-navs my-2 my-lg-0">
+    <li class="nav-items ">
+      <a class="nav-link" href="https://2019.wwktm.co">2019 </a>
+    </li>
+    <li class="nav-items">
+      <a class="nav-link" href="https://2018.wwktm.co">2018</a>
+    </li>
+    <li class="nav-items active">
+      <a class="nav-link" href="https://blog.wwktm.co">Blog <span class="sr-only">(current)</span></a>
+    </li>
+  </ul>
+</nav>
