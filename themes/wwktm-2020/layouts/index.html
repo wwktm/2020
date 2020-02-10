@@ -1,6 +1,5 @@
 {{ define "main"}}
 
-<link rel="stylesheet" type="text/css" href="/css/newStyle.css" />
 
 <style>
   .art-holder {
@@ -11,6 +10,9 @@
     position: absolute;
     bottom: 10px;
     width: 100%;
+  }
+  #cfpButton {
+    margin-top: 16px
   }
 
   @media only screen and (max-width: 600px) {
@@ -26,7 +28,11 @@
     {{ partial "wwktm-art/index.html" . }}
     <div class="release-date">
       {{ partial "release-date/date.html" . }}
+      <button class="btn btn-orange" id="cfpButton" onclick="location.href='/call-for-speakers'" > Apply to Speak </button>
     </div>
+
+
+   
   </div>
 </section>
 
