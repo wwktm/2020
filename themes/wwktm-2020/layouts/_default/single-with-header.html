@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="title">{{ .Title }}</h1>
+                <div class="subtitle">
+                    <p class="col-md-6 offset-md-2">
+                        {{.Params.subtitle}}
+                    </p>
+
+                </div>
+            </div>
+            <a href="/">{{ partial "svg.html" . }}</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="section is-medium single">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

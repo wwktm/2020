@@ -1,16 +1,9 @@
 ---
 title: Call for Speakers
-metadescription: >-
-  Call for speakers
-subtitle: >-
-    Open until : ...
-date: '2020-02-09T16:31:17Z'
-draft: false
-tags:
-  - ''
----
+subtitle: "We would like to invite everyone working on web related applications and infrastructure to submit talks for Web Weekend Kathmandu 2020."
+layout: "single-with-header"
 
-We would like to invite everyone working on web related applications and infrastructure to submit talks for Web Weekend Kathmandu 2020.
+---
 
 ## Topic
 
