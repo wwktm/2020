@@ -1,6 +1,6 @@
-baseURL = ""
+baseURL = "https://wwwktm.co/"
 languageCode = "en-us"
-title = "Web weekend kathmandu"
+title = "Web Weekend Hathmandu"
 theme = "wwktm-2020"
 
 enableRobotsTXT = true
