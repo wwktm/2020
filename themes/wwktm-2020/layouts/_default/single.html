@@ -1,21 +1,3 @@
 {{ define "main" }}
-
-<div class="container-fluid" style="background: #f2f2f2;">
-    <div class="row" style="padding-top: 40px; padding-bottom: 40px;">
-        <div class="col-md-8 offset-md-2">
-            <h1>{{ .Title }}</h1>
-
-        </div>
-        <p class="col-md-6 offset-md-2">
-            {{.Params.subtitle}}
-        </p>
-    </div>
-</div>
-<div class="container" style="padding-top: 40px; padding-bottom: 40px;">
-    <div class="row">
-        <div class="col-md-8 offset-md-2">
-            {{ .Content | emojify }}
-        </div>
-    </div>
-</div>
+{{ .Content }}
 {{ end }}
